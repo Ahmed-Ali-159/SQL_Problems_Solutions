@@ -8,8 +8,10 @@ A collection of my SQL solutions from various platforms, categorized by topic an
 
 ### 🏆 By Platform
 * [**LeetCode**](./LeetCode) – 50+ Solutions (including SQL 50).
+* [**DataLemur**](./DataLemur) – SQL & Data Interview Questions
 * [**HackerRank**](./HackerRank) – Basic to Advanced challenges.
 * [**StrataScratch**](./StrataScratch) – Data Science interview questions.
+
 
 ### 🛠️ By Concept
 * **Basics:** `SELECT`, `WHERE`, `ORDER BY`.
