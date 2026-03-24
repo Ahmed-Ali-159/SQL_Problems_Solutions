@@ -1,0 +1,20 @@
+-- Using MySQL
+
+WITH cte AS(
+    SELECT *, LEAD(num, 1) OVER (ORDER BY id) as ahead_1, LEAD(num, 2) OVER (ORDER BY id) as ahead_2
+    FROM logs
+)
+
+SELECT DISTINCT num AS ConsecutiveNums    
+FROM cte
+WHERE num = ahead_1 AND ahead_1 = ahead_2
+-- Why DISTINCT ?!
+-- To handle if the num appears more than 3 times consecutively, 
+-- we don't want it to appear in the result more than once
+
+-- My first attempt which was not correct:
+/*
+SELECT *, DENSE_RANK() OVER (ORDER BY num) as dn
+FROM logs
+ORDER BY id
+*/
