@@ -1,3 +1,6 @@
+-- Using: Postgres
+-------------------
+
 -- Here is my second attempt 
 
 WITH App_Metrics_Summary AS (
