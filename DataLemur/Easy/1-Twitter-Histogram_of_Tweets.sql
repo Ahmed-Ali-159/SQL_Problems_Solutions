@@ -1,4 +1,4 @@
--- Using: Posgress
+-- Using: Postgres
 WITH cte AS(
   SELECT user_id , count(user_id) AS no_of_tweets
   FROM tweets
