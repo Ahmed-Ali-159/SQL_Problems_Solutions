@@ -7,3 +7,4 @@ SELECT account_id,
             ) AS final_balance
 FROM transactions
 GROUP BY account_id
+
